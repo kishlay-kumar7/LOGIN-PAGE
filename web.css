@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(252, 246, 246, 0.1);
+    transition: 1s ease 0s;
+}
+.login-container:hover{
+    /* transform: scale(1,2); */
+    transform: translateX(30px);
+    transform: translateY(-30px);
+
+}
+#change{
+    text-decoration: none;
+    color: gold;
+}
+.login-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form h2 {
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    font-size: 14px;
+}
+
+p {
+    font-size: 10px;
+    margin-left: 140px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.recaptcha {
+    margin-top: 10px;
+}
+
+.recaptcha iframe {
+    width: 100%;
+}
+
+/* Right Section - Sidebar with Password Request */
+.sidebar {
+    position: relative; /* Ensure that it can contain absolutely positioned elements */
+    background: url('college2.jpg') no-repeat center center/cover; /* Keep the background image */
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    overflow: hidden; /* Prevent overflow of the blurred background */
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('college2.jpg') no-repeat center center/cover; /* Keep the background image */
+    filter: blur(1px); /* Adjust blur here */
+    z-index: 0; /* Ensure it's behind the content */
+}
+#frist{
+    margin-top: 40%;
+}
+.sidebar h2 {
+    font-size: 18px;
+    margin-top: 50%;
+    color: rgb(238, 246, 163);
+    position: relative; /* Ensure text stays above the blurred background */
+    z-index: 1; /* Bring text above the blur */
+}
+
+
+.sidebar a {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 15px;
+    position: relative; /* Ensure text stays above the blurred background */
+    z-index: 1; /* Bring text above the blur */
+}
+
+.sidebar a:hover {
+    background-color: #dee5ed;
+    color: black;
+    border: 2px solid #dee5ed;
+    border-radius: 14px;
+}
+
+/* General Styling */
+.login-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
