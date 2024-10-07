@@ -7,5 +7,5 @@ A login page with HTML5,CSS3
 -->   Flexbox layout for structuring the login form and sidebar.
 -->   Smooth transition effects when hovering over the login container.
 -->   A password recovery section integrated into the sidebar with a visually appealing blurred background
-
+-->   AS i will be acquiring more frontend and backend knowledge i will be updating this file
 \\This repo will keep getting updated as i will be learning more...
